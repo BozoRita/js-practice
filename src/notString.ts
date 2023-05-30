@@ -4,7 +4,7 @@ function notString(str: string){
     return result
   }
   else {
-    let result = "not" + "" + str
+    let result = "not" + " " + str
     return result
   }
 }
@@ -22,3 +22,9 @@ console.log(res4);
 console.log(res5);
 
 export{}
+
+/* Bálint megoldása: 
+export function notString(str: string){
+  return str[0] === "n" && str[1] === "o" && str[2] === "t" ? str : "not " + str
+}
+*/
