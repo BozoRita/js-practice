@@ -1,25 +1,15 @@
 function backAround(str: string){
   let result = ""
 
-  
-
   let index = 0
+  let count = 0
   while (str[index] !== undefined){
     result += str[index]
     index = index + 1
+    count = count + 1
   }
 
-  return result
-
-  
-
-
-
-
-
-
-
-  return result = lastChar + str + lastChar
+  return result = str[count] + str + str[count]
 }
 
 let res1 = backAround('cat') //tcatt
