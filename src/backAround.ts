@@ -2,14 +2,13 @@ function backAround(str: string){
   let result = ""
 
   let index = 0
-  let count = 0
+
   while (str[index] !== undefined){
     result += str[index]
     index = index + 1
-    count = count + 1
   }
 
-  return result = str[count] + str + str[count]
+  return result = str[index-1] + str + str[index-1]
 }
 
 let res1 = backAround('cat') //tcatt
